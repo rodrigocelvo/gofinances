@@ -1,14 +1,7 @@
 import React from 'react';
 
 import {
-  Container,
-  Title,
-  Amount,
-  Footer,
-  Category,
-  Icon,
-  CategoryName,
-  Date,
+  Amount, Category, CategoryName, Container, Date, Footer, Icon, Title
 } from './styles';
 
 interface Category {

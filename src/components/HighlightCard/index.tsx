@@ -1,13 +1,7 @@
 import React from 'react';
 
 import {
-  Container,
-  Header,
-  Title,
-  Icon,
-  Footer,
-  Amount,
-  LastTransaction,
+  Amount, Container, Footer, Header, Icon, LastTransaction, Title
 } from './styles';
 
 interface Props {

@@ -3,17 +3,18 @@ import React from 'react';
 import {
   Container,
   Header,
-  UserWrapper,
-  UserInfo,
-  Photo,
-  User,
-  UserGreeting,
-  UserName,
-  Icon,
   HighlightCards,
-  Transactions,
+  Icon,
+  Photo,
   Title,
   TransactionList,
+  Transactions,
+  User,
+  UserGreeting,
+  UserInfo,
+  UserName,
+  UserWrapper,
+  LogoutButton,
 } from './styles';
 
 import { HighlightCard } from '../../components/HighlightCard';
@@ -75,7 +76,9 @@ export function Dashboard() {
               <UserName>Rodrigo</UserName>
             </User>
           </UserInfo>
-          <Icon name="power" />
+          <LogoutButton onPress={() => {}}>
+            <Icon name="power" />
+          </LogoutButton>
         </UserWrapper>
       </Header>
 
