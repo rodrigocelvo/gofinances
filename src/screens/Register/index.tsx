@@ -39,7 +39,7 @@ const schema = Yup.object().shape({
   amount: Yup.number()
     .typeError('Informe um valor númerico')
     .positive('O valor não pode ser negativo')
-    .required(),
+    .required('Preço é obrigatório'),
 });
 
 export function Register() {
@@ -91,9 +91,7 @@ export function Register() {
 
     try {
       const dataKey = '@gofinances:transactions';
-
       const data = await AsyncStorage.getItem(dataKey);
-
       const currentData = data ? JSON.parse(data) : [];
 
       const dataFormmated = [...currentData, newTransaction];
