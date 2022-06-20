@@ -129,7 +129,9 @@ export function Dashboard() {
           style: 'currency',
           currency: 'BRL',
         }),
-        lastTransaction: `Última entrada dia ${lastTransactionEntries}`,
+        lastTransaction: `Última entrada dia ${
+          !lastTransactionEntries ? lastTransactionEntries : 'sadasd'
+        }`,
       },
 
       expansives: {
@@ -174,7 +176,7 @@ export function Dashboard() {
                 />
 
                 <User>
-                  <UserGreeting>Olá, </UserGreeting>
+                  <UserGreeting>Olá,</UserGreeting>
                   <UserName>Rodrigo</UserName>
                 </User>
               </UserInfo>
