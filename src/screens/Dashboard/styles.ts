@@ -1,5 +1,7 @@
+import { ReactNode } from 'react';
 import styled from 'styled-components/native';
-import { FlatList, FlatListProps, TouchableOpacity } from 'react-native';
+import { FlatList, FlatListProps } from 'react-native';
+import { BorderlessButton } from 'react-native-gesture-handler';
 
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 import {
@@ -10,6 +12,10 @@ import {
 import { Feather } from '@expo/vector-icons';
 
 import { DataListProps } from '.';
+
+interface LogoutButonProps {
+  children: ReactNode;
+}
 
 export const Container = styled.View`
   flex: 1;
@@ -60,7 +66,7 @@ export const UserName = styled.Text`
   font-family: ${({ theme }) => theme.fonts.bold};
 `;
 
-export const LogoutButton = styled(TouchableOpacity)``;
+export const LogoutButton = styled(BorderlessButton)<LogoutButonProps>``;
 
 export const Icon = styled(Feather)`
   color: ${({ theme }) => theme.colors.secondary};
